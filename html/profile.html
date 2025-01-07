@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 15px 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            color: #e63946;
+        }
+
+        .breadcrumb {
+            padding: 20px 30px;
+            background-color: #fff;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+        }
+
+        .sidebar ul li a.active {
+            color: #e63946;
+            font-weight: bold;
+        }
+
+        .content {
+            flex: 3;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #e63946;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .content form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-group label {
+            flex: 1;
+            font-size: 16px;
+        }
+
+        .form-group input {
+            flex: 2;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #e63946;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .form-actions button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-actions .cancel-btn {
+            background-color: #ccc;
+            color: #000;
+        }
+
+        .form-actions .save-btn {
+            background-color: #e63946;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Exclusive</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Sign Up</a>
+    </nav>
+</header>
+
+<div class="breadcrumb">
+    Home / My Account
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#">Address Book</a></li>
+            <li><a href="#">My Payment Options</a></li>
+            <li><a href="#">My Returns</a></li>
+            <li><a href="#">My Cancellations</a></li>
+            <li><a href="#">My Wishlist</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Edit Your Profile</h2>
+        <form>
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Mayank">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Gupta">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="mayank.gupta@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Aster , D3 , Bangalore">
+            </div>
+            <div class="form-group">
+                <label for="current-password">Current Password</label>
+                <input type="password" id="current-password" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="new-password">New Password</label>
+                <input type="password" id="new-password" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm New Password</label>
+                <input type="password" id="confirm-password" placeholder="">
+            </div>
+            <div class="form-actions">
+                <button type="button" class="cancel-btn">Cancel</button>
+                <button type="submit" class="save-btn">Save Changes</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

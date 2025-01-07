@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="../css/orderdetail.css">
+    <script src="../javascript/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Exclusive</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Sign Up</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Order Details</h1>
+       
+
+
+        <div class="order-summary">
+            <h2>Thank you for your purchase!</h2>
+            <p>Order Summary:</p>
+            <ul id="orderItems"></ul>
+            <p><strong>Total:</strong> $<span id="orderTotal"></span></p>
+        </div>
+
+        <div class="billing-info">
+            <h2>Billing Information</h2>
+            <div id="billing-details"></div>
+            <div style="text-align: center; margin-top: 30px;">
+                <button onclick="location.href='index.html'">Return to Home</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

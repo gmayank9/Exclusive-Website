@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+    <script src="../javascript/app.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Exclusive</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Sign Up</a>
+        </nav>
+    </header>
+    <div class="breadcrumb">Account / My Account / Product / View Cart / CheckOut</div>
+    <div class="container">
+        <div class="billing-details">
+            <h2>Billing Details</h2>
+            <label for="first-name">First Name*</label>
+            <input type="text" id="first-name">
+
+            <label for="company-name">Company Name</label>
+            <input type="text" id="company-name">
+
+            <label for="street-address">Street Address*</label>
+            <input type="text" id="street-address">
+
+            <label for="apartment">Apartment, floor, etc. (optional)</label>
+            <input type="text" id="apartment">
+
+            <label for="town-city">Town/City*</label>
+            <input type="text" id="town-city">
+
+            <label for="phone">Phone Number*</label>
+            <input type="text" id="phone">
+
+            <label for="email">Email Address*</label>
+            <input type="email" id="email">
+
+            <div class="checkbox">
+                <input type="checkbox" id="save-info">
+                <label for="save-info">Save this information for faster check-out next time</label>
+            </div>
+        </div>
+
+        <div class="order-summary">
+            <h2>Your Order</h2>
+            <ul>
+                <li>
+                    <img src="lcd-monitor.png" alt="LCD Monitor">
+                    LCD Monitor
+                    <span>$650</span>
+                </li>
+                <li>
+                    <img src="gamepad.png" alt="Gamepad">
+                    H1 Gamepad
+                    <span>$1100</span>
+                </li>
+                <li>
+                    <strong>Subtotal:</strong>
+                    <span>$1750</span>
+                </li>
+                <li>
+                    <strong>Shipping:</strong>
+                    <span>Free</span>
+                </li>
+                <li>
+                    <strong>Total:</strong>
+                    <span>$1750</span>
+                </li>
+            </ul>
+
+            <div class="payment-method">
+                <label><input type="radio" name="payment" value="bank"> Bank</label>
+                <label><input type="radio" name="payment" value="cod" checked> Cash on delivery</label>
+            </div>
+
+            <div class="coupon-code">
+                <input type="text" placeholder="Coupon Code">
+                <button>Apply Coupon</button>
+            </div>
+
+            <button class="place-order">Place Order</button>
+        </div>
+    </div>
+</body>
+</html>

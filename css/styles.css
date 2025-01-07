@@ -1,0 +1,281 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  /* Header */
+  .header {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .top-banner {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .top-banner a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Main Content */
+  .main-content {
+    display: flex;
+    justify-content: unset;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+  }
+  
+  .left-section img {
+    max-width: 100%;
+  }
+  
+  .right-section {
+    max-width: 400px;
+    width: 100%;
+    margin: 7rem;
+  }
+  
+  .right-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .right-section p {
+    margin-bottom: 20px;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .login-form .btn {
+    width: 100%;
+    padding: 10px;
+    background: #ff3b30;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .login-form .forgot-password {
+    
+    margin-top: 10px;
+    text-align: right;
+    color: red;
+  }
+  
+  /* Footer */
+  /* General Footer Styles */
+  .footer {
+    background: #111; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px 20px; /* Consistent spacing */
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between sections */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px; /* Prevent shrinking */
+}
+
+.footer-section h3, 
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+  .footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #fff;
+  }
+  
+  /* Subscribe Form */
+  .subscribe-form {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden; /* Ensure rounded edges */
+  }
+  
+  .subscribe-form input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+  }
+  
+  .subscribe-form button {
+    background: #ff6b6b;
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
+  .subscribe-form button:hover {
+    background: #e05050;
+  }
+  
+  /* App Buttons */
+  .app-buttons img {
+    width: 120px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Social Icons (Optional: Match the last part of the screenshot) */
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .social-icons a img {
+    width: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer Bottom (Copyright) */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 13px;
+    color: #777;
+  }
+  /* QR Code Styling */
+/* Flex Container for QR Code and Buttons */
+.app-container {
+    display: flex; /* Enables Flexbox */
+    align-items: center; /* Align vertically in the center */
+    gap: 5px; /* Adds space between QR Code and buttons */
+  }
+  
+  /* QR Code Styling */
+  .qr-code img {
+ /* Set width for QR Code */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* App Buttons Styling */
+  .app-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .app-buttons img {
+/* Set width for buttons */
+    height: 25px;
+  }
+  
+  /* Social Icons Styling */
+  .social-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+    margin-top: 20px;
+  }
+  
+  .social-icons a img {
+    width: 24px; /* Icon size */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .social-icons a img:hover {
+    transform: scale(1.1); /* Slight scale-up on hover */
+  }
+  

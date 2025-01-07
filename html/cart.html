@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <script src="../javascript/app.js"></script>
+
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#">ShopNow</a></p>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Exclusive</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Sign Up</a>
+        </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="What are you looking for?">
+            <span>🔍</span>
+            <span>❤️</span>
+            <span>🛒</span>
+            
+            
+        </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <div class="breadcrumb">Home / Cart</div>
+
+        <!-- Header Row -->
+        <div class="cart-header">
+            <div>Product</div>
+            <div>Price</div>
+            <div>Quantity</div>
+            <div>Subtotal</div>
+        </div>
+
+        <!-- Product Rows -->
+        <div class="cart-item">
+            <div class="product-details">
+                <img src="../images/Monitor-Cart-Small.png" alt="LCD Monitor">
+                <span>LCD Monitor</span>
+            </div>
+            <div class="product-info">$650</div>
+            <div class="product-info">
+                <select>
+                    <option selected>01</option>
+                </select>
+            </div>
+            <div class="product-info">$650</div>
+        </div>
+
+        <div class="cart-item">
+            <div class="product-details">
+                <img src="../images/g92-2-500x500 1.png" alt="HI Gamepad">
+                <span>HI Gamepad</span>
+            </div>
+            <div class="product-info">$550</div>
+            <div class="product-info">
+                <select>
+                    <option>01</option>
+                    <option selected>02</option>
+                    <option>03</option>
+                </select>
+            </div>
+            <div class="product-info">$1100</div>
+        </div>
+
+        <!-- Cart Actions -->
+        <div class="cart-actions">
+            <button class="return-btn">Return To Shop</button>
+            <button class="update-btn">Update Cart</button>
+        </div>
+
+        <!-- Coupon and Total -->
+        <div class="coupon-total-container">
+            <div class="coupon-section">
+                <input type="text" placeholder="Coupon Code">
+                <button class="apply-coupon">Apply Coupon</button>
+            </div>
+            <div class="cart-total">
+                <h3>Cart Total</h3>
+                <p>Subtotal: <span>$1750</span></p>
+                <p>Shipping: <span>Free</span></p>
+                <p>Total: <span>$1750</span></p>
+                <button class="checkout-btn">Process to Checkout</button>
+            
+            </div>
+        </div>
+    </section>
+</body>
+</html>
